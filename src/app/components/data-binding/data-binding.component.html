@@ -1,0 +1,52 @@
+<!-- Interpolation {{ }} ts => html -->
+<h5>Interpolation</h5>
+
+<p>Welcome {{username}}</p>
+<p>Your age is {{ age }}</p>
+<div>This is a div create by {{username}}</div>
+<div>Is Yash a adult? {{isAdult}}</div>
+<hr>
+
+<!-- Property Binding [] ts => html -->
+<h5>Property Binding</h5>
+<img src="../../../assets/images/nature-img-1.webp" alt="nature" width="250px">
+<!-- <img [src]="imgPath" alt="nature" width="200px"> -->
+<hr>
+
+<!-- Event Binding () Event is sent from html => ts -->
+<h5>Event Binding</h5>
+<button (click)="clickMe()"   >Click Me</button>
+
+<!-- Interpolation vs Property Binding -->
+<hr>
+<h5>Interpolation vs Property Binding</h5>
+Interpolation: <input type="text" disabled="{{disableInput}}">
+<br>
+Property Binding: <input type="text" [disabled]="disableInput">
+<br>
+<button (click)="enableInput()">Enable Input</button>
+
+<!-- Two way binding [()] ts <=> html -->
+<hr>
+<h5>Two way binding</h5>
+<form>
+    <label for="">Enter a name</label>
+    <input type="text" name="name" [(ngModel)]="myName"> {{myName}}
+</form>
+
+
+<!-- Reference Variable -->
+<hr>
+<h5>Reference Variable</h5>
+<form>
+    <label for="">Enter message</label>
+    <input type="text" name="myMessage" #myInputBox>
+
+    <button (click)="showMsg(myInputBox.value)">Show Message</button>
+
+
+</form>
+
+
+
+

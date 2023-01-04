@@ -1,0 +1,9 @@
+<p>child works!</p>
+
+<strong>{{ pData }}</strong>
+
+<form action="">
+    <label>Send message from Child</label>
+    <input type="text" name="childMsg" #cMsg>
+    <button type="button" class="btn btn-primary" (click)="getMessage(cMsg.value)" >Send</button>
+</form>

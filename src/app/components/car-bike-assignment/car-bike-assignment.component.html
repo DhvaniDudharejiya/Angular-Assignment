@@ -1,0 +1,22 @@
+<p>car-bike-assignment works!</p>
+<form>
+    <button class="ms-5 " (click)="carclicked()"> Car </button>
+    <button class="ms-5" (click)="bikeclicked()">Bike</button>
+    <div *ngIf="flagcar == false" class="mt-5">
+        <ol>
+            <li *ngFor="let Car of cars" (click)="showMsg(Car)">
+                {{ Car }}
+            </li>
+        </ol>
+    </div>
+    <div *ngIf="flagbike == false" class="mt-5">
+        <ol>
+            <li *ngFor="let Bike of bikes" (click)="showMsg(Bike)">
+                {{ Bike }}
+            </li>
+        </ol>
+    </div>
+    <div *ngIf="Clicked == true">
+         <p>You Can Selected : </p>  {{selecteditem}} 
+    </div>
+</form>

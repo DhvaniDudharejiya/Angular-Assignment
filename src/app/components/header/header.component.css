@@ -1,0 +1,21 @@
+header {
+    background-color: blue;
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+}
+
+nav {
+    margin-left: 50px;
+
+}
+a {
+    font-size: x-large;
+    color: aqua;
+    text-decoration: none;
+    padding-right: 10px;
+}
+a:hover{
+    color: red;
+}

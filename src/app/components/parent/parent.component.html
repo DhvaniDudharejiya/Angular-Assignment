@@ -1,0 +1,11 @@
+<p>parent works!</p>
+<strong>{{childData}}</strong>
+
+<form>
+    <label>Parent - child</label>
+    <input type="text" name="parentMsg" #pMsg>
+    <button type="button" class="btn btn-primary" (click)="getMsg(pMsg.value)" >Send</button>
+</form>
+
+
+<app-child (emitterObj)="childData=$event"  [pData]="data"></app-child>
