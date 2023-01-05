@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AngFormComponent } from './components/ang-form/ang-form.component';
+import { Comp2Component } from './components/comp2/comp2.component';
 import { DataBindingComponent } from './components/data-binding/data-binding.component';
 import { DirectivesComponent } from './components/directives/directives.component';
 import { ParentComponent } from './components/parent/parent.component';
@@ -15,7 +16,7 @@ const routes: Routes = [
   // {path:"directives",redirectTo:"pipe" pathMatch:"full"},//redirect
   { path: "parent", component: ParentComponent },
 
-
+  { path: "comp2", component: Comp2Component },
   { path: "pipe", component: PipeComponent },
   { path: "pipe/:id", component: PipeComponent },//show id in navigation
   { path: "pipe/:gender", component: PipeComponent },//show gender in navigation

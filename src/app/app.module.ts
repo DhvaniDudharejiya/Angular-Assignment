@@ -20,6 +20,8 @@ import { AngFormComponent } from './components/ang-form/ang-form.component';
 import { ReactiveFormsComponent } from './components/reactive-forms/reactive-forms.component';
 import { TemplateDrivenFormComponent } from './components/template-driven-form/template-driven-form.component';
 import { NavComponent } from './components/nav/nav.component';
+import { Comp1Component } from './components/comp1/comp1.component';
+import { Comp2Component } from './components/comp2/comp2.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { NavComponent } from './components/nav/nav.component';
     ReactiveFormsComponent,
     TemplateDrivenFormComponent,
     NavComponent,
+    Comp1Component,
+    Comp2Component,
   ],
   imports: [
     BrowserModule,

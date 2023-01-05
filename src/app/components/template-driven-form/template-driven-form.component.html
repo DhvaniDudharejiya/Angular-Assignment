@@ -6,8 +6,10 @@
         <div class="col-sm-6">
             <label>First Name</label>
 
+
+            <!-- propertybinding in constant.ts -->
             <input type="text" name="fname" #refName="ngModel" class="form-control" placeholder="Enter your first name"
-                pattern="[a-zA-Z]{3,30}" ngModel required>
+                [pattern]="regexname" ngModel required>
 
 
             <div *ngIf="refName.invalid && refName.touched" class="alert alert-danger">
