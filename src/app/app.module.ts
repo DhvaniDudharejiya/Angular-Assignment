@@ -22,6 +22,8 @@ import { TemplateDrivenFormComponent } from './components/template-driven-form/t
 import { NavComponent } from './components/nav/nav.component';
 import { Comp1Component } from './components/comp1/comp1.component';
 import { Comp2Component } from './components/comp2/comp2.component';
+import { ChangeColorDirective } from './custom-dir/change-color.directive';
+import { MyColorComponent } from './components/my-color/my-color.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { Comp2Component } from './components/comp2/comp2.component';
     NavComponent,
     Comp1Component,
     Comp2Component,
+    ChangeColorDirective,
+    MyColorComponent,
   ],
   imports: [
     BrowserModule,

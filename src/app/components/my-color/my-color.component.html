@@ -1,0 +1,36 @@
+<p>my-color works!</p>
+
+
+<h2 appChangeColor>Change my color</h2>
+
+<p appChangeColor>p  Change my color</p>
+<div appChangeColor> div Change my color</div>
+<h6 appChangeColor>h6 Change my color</h6>
+<br>
+<hr>
+
+<!-- name will be same -->
+<div>
+    <input type="radio" name="color" (click)="setcolor('red')">  Red
+    <input type="radio" name="color"  (click)="setcolor('blue')"> Blue
+    <input type="radio" name="color" (click)="setcolor('green')">  Green
+</div>
+
+<hr>
+<h1>service</h1>
+<table class="table table-striped table-hover table-dark">
+    <thead>
+        <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of products">
+            <td>{{item.productId}}</td>
+            <td>{{item.productName}}</td>
+            <td>{{item.productPrice}}</td>
+        </tr>
+    </tbody>
+</table>
