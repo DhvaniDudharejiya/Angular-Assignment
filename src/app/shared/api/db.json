@@ -1,0 +1,74 @@
+{
+  "Employee": [
+    {
+      "id": 101,
+      "name": "Dhvani",
+      "post": "Angular Dev",
+      "salary": 40000,
+      "address": "Ahemdabad"
+    },
+    {
+      "id": 102,
+      "name": "Mahek",
+      "post": "C++ Dev",
+      "salary": 43000,
+      "address": "Pune"
+    },
+    {
+      "id": 104,
+      "name": "Diya",
+      "post": "Python Dev",
+      "salary": 43000,
+      "address": "Pune"
+    },
+    {
+      "id": 106,
+      "name": "Dhvani",
+      "post": "React Dev",
+      "salary": 50000,
+      "address": "Ahemdabad"
+    },
+    {
+      "id": 107,
+      "name": "Dhvani",
+      "post": "Angular Dev",
+      "salary": 40000,
+      "address": "Ahemdabad"
+    },
+    {
+      "id": 108,
+      "name": "Neha",
+      "post": "React Dev",
+      "salary": 41000,
+      "address": "Surat"
+    },
+    {
+      "id": 109,
+      "name": "Sandip",
+      "post": "Java Dev",
+      "salary": 42000,
+      "address": "Gandhinagar"
+    },
+    {
+      "id": 110,
+      "name": "Diya",
+      "post": "Python Dev",
+      "salary": 43000,
+      "address": "Pune"
+    },
+    {
+      "id": 111,
+      "name": "Vrunda",
+      "post": "C++ Dev",
+      "salary": 44000,
+      "address": "Mumbai"
+    },
+    {
+      "name": "Meena",
+      "post": "sr. Java Dev",
+      "salary": "80000",
+      "address": "Palanpur",
+      "id": 112
+    }
+  ]
+}

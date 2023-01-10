@@ -1,1 +1,47 @@
-<p>add works!</p>
+
+
+<!-- reset() is use for rf form -->
+<!-- myForm.resetForm() ---- use for reset form template driven form -->
+<form #myForm="ngForm" (ngSubmit)="addData(myForm.value)">
+    <div class="row">
+        <div class="col-sm-6">
+            <label>Name</label>
+            <input type="text" name="name" #refName="ngModel" class="form-control" placeholder="Enter your  name"
+                ngModel required>
+            <div *ngIf="refName.invalid && refName.touched" class="alert alert-danger">
+                Name is required
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <label>Post</label>
+            <input type="text" name="post" #refpost="ngModel" class="form-control" placeholder="Enter your Post" ngModel
+                required>
+            <div *ngIf="refpost.invalid && refpost.touched" class="alert alert-danger">
+                Post is required
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6">
+            <label>Salary</label>
+            <input type="text" name="salary" #refsalary="ngModel" class="form-control" placeholder="Enter your salary"
+                ngModel required>
+            <div *ngIf="refsalary.invalid && refsalary.touched" class="alert alert-danger">
+                Salary is required
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <label>Address</label>
+            <input type="text" name="address" #refaddress="ngModel" class="form-control"
+                placeholder="Enter your Address" ngModel required>
+            <div *ngIf="refaddress.invalid && refaddress.touched" class="alert alert-danger">
+                address is required
+            </div>
+        </div>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary" [disabled]="myForm.invalid">Save</button>
+
+
+</form>

@@ -24,6 +24,7 @@ import { Comp1Component } from './components/comp1/comp1.component';
 import { Comp2Component } from './components/comp2/comp2.component';
 import { ChangeColorDirective } from './custom-dir/change-color.directive';
 import { MyColorComponent } from './components/my-color/my-color.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { MyColorComponent } from './components/my-color/my-color.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

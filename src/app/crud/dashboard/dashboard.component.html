@@ -1,1 +1,42 @@
-<p>dashboard works!</p>
+<!-- <h1> show data with json server data.service</h1> -->
+<h3> Showing Data</h3>
+
+<div class="row">
+    <div class="col-sm-8">
+        <button class="btn btn-primary" routerLink="add"><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
+    </div>
+    <div class="col-sm-4">
+        <input type="text" name="search" id="" [(ngModel)]="term" class="form-control" placeholder="Search....">
+    </div>
+</div>
+
+<hr>
+<br>
+<table class="table table-light table-hover table-bordered ">
+    <thead>
+        <tr>
+            <th> Id</th>
+            <th> Name</th>
+            <th> Post</th>
+            <th> Salary</th>
+            <th (click)="orderbyaddress()">Address</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of empData  | filter:term  | paginate: { itemsPerPage: 5, currentPage: pageno } | orderBy: order : reverse">
+            <td>{{e.id}}</td>
+            <td>{{e.name}}</td>
+            <td>{{e.post}}</td>
+            <td>{{e.salary}}</td>
+            <td>{{e.address}}</td>
+            <td>
+                <button class="btn btn-outline-success m-2"><i class="fa fa-pencil-square-o"
+                        aria-hidden="true"></i></button>
+                <button class="btn btn-outline-danger m-2" (click)="delete(e.id)"><i class="fa fa-trash"
+                        aria-hidden="true"></i></button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<pagination-controls (pageChange)="pageno = $event"></pagination-controls>
