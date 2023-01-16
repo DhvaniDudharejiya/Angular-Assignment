@@ -3,7 +3,7 @@
 
 <div class="row">
     <div class="col-sm-8">
-        <button class="btn btn-primary" routerLink="add"><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
+        <button class="btn btn-primary" routerLink="add">Add <i class="fa fa-plus ms-2 mt-1" aria-hidden="true"></i> </button>
     </div>
     <div class="col-sm-4">
         <input type="text" name="search" id="" [(ngModel)]="term" class="form-control" placeholder="Search....">
@@ -15,11 +15,11 @@
 <table class="table table-light table-hover table-bordered ">
     <thead>
         <tr>
-            <th> Id</th>
-            <th> Name</th>
-            <th> Post</th>
-            <th> Salary</th>
-            <th (click)="orderbyaddress()">Address</th>
+            <th (click)="orderbyaddress('id')">Id <i class="fa fa-sort" aria-hidden="true"></i></th>
+            <th (click)="orderbyaddress('name')"> Name <i class="fa fa-sort" aria-hidden="true"></i></th>
+            <th (click)="orderbyaddress('post')"> Post <i class="fa fa-sort" aria-hidden="true"></i></th>
+            <th (click)="orderbyaddress('salary')"> Salary <i class="fa fa-sort" aria-hidden="true"></i></th>
+            <th (click)="orderbyaddress('address')">Address <i class="fa fa-sort" aria-hidden="true"></i></th>
             <th>Action</th>
         </tr>
     </thead>
@@ -31,7 +31,7 @@
             <td>{{e.salary}}</td>
             <td>{{e.address}}</td>
             <td>
-                <button class="btn btn-outline-success m-2"><i class="fa fa-pencil-square-o"
+                <button class="btn btn-outline-success m-2" [routerLink]= "['edit', e.id]"><i class="fa fa-pencil-square-o"
                         aria-hidden="true"></i></button>
                 <button class="btn btn-outline-danger m-2" (click)="delete(e.id)"><i class="fa fa-trash"
                         aria-hidden="true"></i></button>

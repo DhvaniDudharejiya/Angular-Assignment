@@ -10,8 +10,12 @@ export class DashboardComponent implements OnInit {
   term: any
   pageno: any
   empData: any
-  order: string = 'address';
-  reverse : boolean = false
+  // order: string = 'name';
+  order: string = '';
+  reverse : boolean = true
+
+
+
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
@@ -35,7 +39,9 @@ export class DashboardComponent implements OnInit {
     })
   }
 
-  orderbyaddress() {
+  orderbyaddress(val : any) {
+    console.log(val)
+    this.order = val
     this.reverse = !this.reverse
   }
 }

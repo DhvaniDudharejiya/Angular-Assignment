@@ -4,21 +4,35 @@
       "id": 101,
       "name": "Dhvani",
       "post": "Angular Dev",
-      "salary": 40000,
+      "salary": "50000",
       "address": "Ahemdabad"
     },
     {
       "id": 102,
       "name": "Mahek",
+      "post": "C Dev",
+      "salary": "48000",
+      "address": "Mumbai"
+    },
+    {
+      "id": 103,
+      "name": "Mahima",
       "post": "C++ Dev",
-      "salary": 43000,
-      "address": "Pune"
+      "salary": 42000,
+      "address": "Surat"
     },
     {
       "id": 104,
       "name": "Diya",
       "post": "Python Dev",
       "salary": 43000,
+      "address": "Vadodara"
+    },
+    {
+      "id": 105,
+      "name": "Aesha",
+      "post": "Java Dev",
+      "salary": 44000,
       "address": "Pune"
     },
     {

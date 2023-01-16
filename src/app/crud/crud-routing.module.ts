@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: "dashboard", component: DashboardComponent},
   { path: "add", component: AddComponent},
   { path: "edit", component: EditComponent},
+  { path: "edit/:id", component: EditComponent},//parameterized Routing
 ];
 
 @NgModule({

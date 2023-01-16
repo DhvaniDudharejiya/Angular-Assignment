@@ -1,1 +1,39 @@
 <p>edit works!</p>
+
+
+<!-- reset() is use for rf form -->
+<!-- myForm.resetForm() ---- use for reset form template driven form -->
+<form #myForm="ngForm"  (ngSubmit)="putData(myForm.value)">
+    <div class="row">
+        <div class="col-sm-6">
+            <label>Name</label>
+            <input type="text" name="name" #refName="ngModel" class="form-control" placeholder="Enter your  name"
+                required [ngModel]="empObj?.name">
+        </div>
+        <div class="col-sm-6">
+            <label>Post</label>
+            <input type="text" name="post" #refpost="ngModel" class="form-control" placeholder="Enter your Post" [ngModel]="empObj?.post"
+                required>
+
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6">
+            <label>Salary</label>
+            <input type="text" name="salary" #refsalary="ngModel" class="form-control" placeholder="Enter your salary"
+                [ngModel]="empObj?.salary" required>
+
+        </div>
+        <div class="col-sm-6">
+            <label>Address</label>
+            <input type="text" name="address" #refaddress="ngModel" class="form-control"
+                placeholder="Enter your Address" [ngModel]="empObj?.address" required>
+
+        </div>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary" [disabled]="myForm.invalid">Save</button>
+
+
+</form>
