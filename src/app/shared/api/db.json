@@ -24,7 +24,7 @@
     {
       "id": 104,
       "name": "Diya",
-      "post": "Python Dev",
+      "post": "Python/c++ Dev",
       "salary": 43000,
       "address": "Vadodara"
     },
@@ -83,6 +83,23 @@
       "salary": "80000",
       "address": "Palanpur",
       "id": 112
+    }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "username": "Dhvani",
+      "password": "Dhvani@123"
+    },
+    {
+      "id": 2,
+      "username": "Sandip",
+      "password": "Sandip@123"
+    },
+    {
+      "id": 3,
+      "username": "admin",
+      "password": "admin123"
     }
   ]
 }

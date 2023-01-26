@@ -12,7 +12,10 @@
 <div class="container">
     <div class="card border-primary">
         <div class="card-header border-primary">
-            <app-nav></app-nav>
+            <div *ngIf="router.url != '/' && router.url != '/' ">
+                <app-nav></app-nav>
+
+            </div>
         </div>
 
         <div class="card-body border-primary">
@@ -20,6 +23,7 @@
         </div>
 
         <div class="card-footer border-primary">
+            <app-footer></app-footer>
         </div>
     </div>
 </div>

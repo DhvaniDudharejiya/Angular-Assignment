@@ -24,7 +24,9 @@ import { Comp1Component } from './components/comp1/comp1.component';
 import { Comp2Component } from './components/comp2/comp2.component';
 import { ChangeColorDirective } from './custom-dir/change-color.directive';
 import { MyColorComponent } from './components/my-color/my-color.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component';
+import { FooterComponent } from './components/footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -50,6 +52,8 @@ import {HttpClientModule} from '@angular/common/http'
     Comp2Component,
     ChangeColorDirective,
     MyColorComponent,
+    LoginComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

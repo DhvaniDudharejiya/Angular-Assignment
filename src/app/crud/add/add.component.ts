@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataService } from 'src/app/shared/services/data.service';
+import { GlobalService } from 'src/app/shared/services/global.service';
 
 @Component({
   selector: 'app-add',
@@ -8,9 +9,10 @@ import { DataService } from 'src/app/shared/services/data.service';
   styleUrls: ['./add.component.css']
 })
 export class AddComponent implements OnInit {
-
+  tableName= "Employee"
   //dependency injection
-  constructor(private dataService : DataService , private router : Router) { }
+  // constructor(private dataService : DataService , private router : Router) { }
+  constructor(private globalService : GlobalService , private router : Router) { }
 
   ngOnInit(): void {
   }
@@ -24,7 +26,7 @@ export class AddComponent implements OnInit {
       salary: data.salary,
       address: data.address
     }
-    this.dataService.addRecord(empObj).subscribe(()=>{
+    this.globalService.addRecord(this.tableName,empObj).subscribe(()=>{
       alert("Record added")
       this.router.navigate(['/crud'])
     })
